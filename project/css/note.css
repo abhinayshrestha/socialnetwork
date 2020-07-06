@@ -1,0 +1,19 @@
+.right-container #background{
+	 height:23%;
+	 background:url('../webimages/kcc.jpg');
+	 background-size:cover;
+	 filter: blur(6px);
+	// display:none;
+}
+.right-container span{
+    position: absolute;
+    text-align:center;
+	top:10%;
+	left: 37%;
+    display: block;
+	color: #fff;
+    text-shadow: 2px 2px 7px #000;
+    font-weight: bolder;
+    font-size: 18px;
+    overflow: hidden;
+}

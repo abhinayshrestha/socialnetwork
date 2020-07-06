@@ -1,0 +1,300 @@
+#qwhitebody{
+   position: fixed;
+    width:100%;
+    height:100%;
+    background-color: rgba(0,0,0,0.9);
+    z-index: 9999;
+    display: none;
+}
+.qwhitebodyimg{
+    position: fixed;
+    z-index: 9999;
+    max-width:90%;
+    max-height:90%;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+}
+#name{
+    position: fixed;
+    z-index: 9999;
+    left:0;
+    top:0;
+    font-size: 16px;
+    font-weight: bolder;
+    color:red;
+}
+#questionform{
+    position:fixed;
+    z-index:9999;
+    width: 50%;
+    left:25%;
+    background: #fff;
+    font-size:15px;
+    border:1px solid #ccc;
+    //overflow: hidden;
+    border-radius: 3px;
+    animation: drop 400ms ease-in-out forwards;
+    display: none;
+}
+@keyframes drop{
+    0%{
+        opacity: 0;
+        top: -10%;
+    }
+    70%{
+        top: 30%;
+    }
+    100%{
+        opacity: 1;
+        top: 20%;
+    }
+}
+#questionform h3{
+    color: #1280ce;
+    text-align: center;
+    margin: 2%;
+}
+#questionform select{
+    margin:3% 5% 10% 5%;
+    height: 30px;
+    width:150px;
+    border-radius: 3px;
+    padding-left: 5px;
+    border: 1px solid #ccc;   
+    background: #fff;
+    color: #000;
+    cursor: hand;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    outline: none;
+}
+#questionform #tempbutton{
+  margin-left: 5%;
+  -webkit-border-radius: 3;
+  -moz-border-radius: 3;
+  border-radius: 3px;
+  font-weight:bolder;
+  font-size: 15px;
+  padding: 10px 20px 10px 20px;    
+  cursor:hand;    
+  background: #fff;
+  text-shadow: 1px 1px 15px #f8f8f8;
+  border:1px solid #ccc;
+  color: #000;
+  outline:none;
+  transition: all 500ms ease;
+}
+#questionform #tempbutton:active{
+    background: #bed8e8;
+    transform: scale(0.9);
+}
+#questionform #questionsubmit{
+  margin-left: 5%;
+  -webkit-border-radius: 4;
+  -moz-border-radius: 4;
+  border-radius: 4px;
+  font-size: 13px;
+  padding: 8px 20px 8px 20px;    
+  cursor:hand;  
+  background: #1280ce;
+  border:0;
+  color: #fff;
+  outline:none;
+  transition: all 500ms ease;
+  display: none;    
+}
+#questionform #questionsubmit:active{
+    background: #bed8e8;
+    transform: scale(0.9);
+}
+#questionform #year{
+    height: 30px;
+    width:70px;
+    border:0;
+    border-radius: 3px;
+    padding-left: 5px;    
+    background: #fff;
+    color: #1280ce;
+    margin: 5% 0% 5% 5%;
+    outline: none;
+    border: 1px solid #ccc;
+    display: none;
+}
+#questionform .preview{
+    float: right;
+    margin-right: 40%;
+}
+#questionform #prog{
+    margin: 2% 5%;
+    width: 25%;
+    height: 5px;
+    display: none;
+}
+#questionform i{
+    font-size: 20px;
+    margin-right:62%;
+    color: green;
+    float: right;
+    display: none;
+}
+#questionform img:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+#questionform #cancelsubmit{
+    -webkit-border-radius: 4;
+       -moz-border-radius: 4;
+       border-radius: 4px;
+       width:80px;
+       font-size: 13px;
+       height: 30px;
+       cursor:hand;  
+       background: #fff;
+       border:0;
+       color: #000;
+       margin-bottom: 10px;
+       margin:10px 40px;
+       background: #f8f8f8;
+       border: 1px solid #ccc;
+       outline:none;
+}
+#questionform #cancelsubmit:active{
+    opacity: .6;
+}
+.right-container #background{
+	 height:23%;
+	 background:url('../webimages/kcc.jpg');
+	 background-size:cover;
+	 filter: blur(6px);
+    display: none;
+}
+.right-container .info{
+    position: absolute;
+    text-align:center;
+	top:10%;
+	left:30%;
+	color: #fff;
+     text-shadow: 2px 2px 10px #000;
+    font-weight: bolder;
+    font-size: 20px;
+}
+#questionbank-container{
+	  width:730px;
+	  position:absolute;
+	  margin:0% 20%;
+}
+#questionbank-container .static{
+     background:#ebeef4; 
+    position:absolute;
+    height:180px;
+    width:105%;
+    border-bottom:1px solid #ccc;
+}
+#questionbank-container .static h4{
+	color:#1280ce;
+	text-align:center;
+	margin-top:15px;
+}
+#questionbank-container #searchquestionbank{
+    margin-top: 30px;
+    background: #fff;
+    height:20%;
+    width:150px;
+    border-radius:3px;
+    outline:none;
+    box-shadow: 0 0 2px rgb(204, 204, 204);
+    cursor:hand;
+    border:0;
+    border:1px solid #ccc;
+    color:#1280ce;
+    font-size: 14px;
+    font-weight: bolder;
+}
+#questionbank-container #searchquestionbank:active{
+    background: #bed8e8;
+}
+#questionbank-container .papers{
+    background: #fff;
+    width: 200px;
+    display: inline-block;
+    float: left;
+    margin:5% 0% 2% 5%;
+}
+#questionbank-container .papers .qimgcover{
+    height: 230px;
+    width: 200px;
+    position: relative;
+    overflow: hidden;
+    background: #fff;
+}
+@media screen and (orientation:portrait) {
+ #questionbank-container .papers img{
+      position: absolute;
+  left: 50%;
+  top: 50%;
+  height: auto;
+  width:100%;
+  -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+
+  }
+}
+
+@media screen and (orientation:landscape) {
+  #questionbank-container .papers img {
+      position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 100%;
+  width:auto;
+  -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+
+  }
+}
+#questionbank-container .papers date{
+    display: block;
+    text-align: center;
+    padding :5px 0px;
+    font-size: 13px;
+    font-weight: bolder;
+    color: #4d4d33;
+    border:1px solid rgb(204, 204, 204);
+    box-shadow: 1px 1px 1px rgb(204, 204, 204);
+}
+.left-container #addquestion{
+-webkit-border-radius: 4;
+  -moz-border-radius: 4;
+  border-radius: 4px;
+  font-weight:bolder;
+  width:200px;
+  font-size: 15px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  width: 70%;    
+  margin:40% 0% 0% 13%;
+  cursor:hand;
+  box-shadow: 1px 2px 2px rgb(204, 204, 204);    
+  background: #fff;
+  text-shadow: 1px 1px 15px #f8f8f8;
+    border:1px solid #bed8e8;
+    color: #1280ce;
+    outline:none;
+    overflow: hidden;
+  transition: all 500ms ease;
+}
+.left-container #addquestion:active{
+    background: #bed8e8;
+    transform: scale(0.9);
+}
+#dynamic #emptymsg{
+    font-weight: bolder;
+    color:red;
+    display: block;
+    text-align: center;
+    margin-top: 5%;
+}
